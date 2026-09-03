@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Livre Blanc — Souveraineté Numérique Africaine | Debass Technologies</title>
+<meta name="description" content="Téléchargez gratuitement le livre blanc « Souveraineté Numérique Africaine » : reprendre le contrôle de nos données, de nos infrastructures et de notre intelligence. Par Jules Tiemoko, CTO de Debass Technologies, avec la contribution de HODI.">
+<link rel="canonical" href="https://debasstechnologies.com/ressources/livre-blanc-souverainete-numerique-africaine.html">
+<meta name="theme-color" content="#0A2A4D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Debass Technologies">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://debasstechnologies.com/ressources/livre-blanc-souverainete-numerique-africaine.html">
+<meta property="og:title" content="Livre Blanc — Souveraineté Numérique Africaine | Debass Technologies">
+<meta property="og:description" content="Téléchargez gratuitement le livre blanc « Souveraineté Numérique Africaine » : reprendre le contrôle de nos données, de nos infrastructures et de notre intelligence. Par Jules Tiemoko, CTO de Debass Technologies, avec la contribution de HODI.">
+<meta property="og:image" content="https://debasstechnologies.com/assets/livre-blanc/livre-blanc-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Livre Blanc — Souveraineté Numérique Africaine | Debass Technologies">
+<meta name="twitter:description" content="Téléchargez gratuitement le livre blanc « Souveraineté Numérique Africaine » : reprendre le contrôle de nos données, de nos infrastructures et de notre intelligence. Par Jules Tiemoko, CTO de Debass Technologies, avec la contribution de HODI.">
+<meta name="twitter:image" content="https://debasstechnologies.com/assets/livre-blanc/livre-blanc-hero.jpg">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .lb-why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .lb-why-card{background:var(--white);border:1px solid var(--gray-300);border-radius:16px;padding:26px;}
+  .lb-why-card h4{font-size:15.5px;color:var(--blue-deep);margin-bottom:8px;}
+  .lb-why-card p{font-size:13.5px;color:var(--gray-600);line-height:1.55;}
+  .lb-toc{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;}
+  .lb-toc-item{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--ink);padding:10px 0;border-bottom:1px solid var(--gray-200);}
+  .lb-toc-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--orange);font-weight:700;flex-shrink:0;width:26px;}
+  .lb-author{display:grid;grid-template-columns:140px 1fr;gap:28px;align-items:center;background:var(--bg,#F7F9FC);border-radius:20px;padding:32px;}
+  .lb-author img{width:140px;height:140px;border-radius:16px;object-fit:cover;}
+  .lb-author blockquote{font-family:'Sora',sans-serif;font-style:italic;font-weight:600;color:var(--blue-deep);font-size:16px;line-height:1.5;margin-bottom:12px;}
+  .lb-author cite{font-style:normal;font-size:13px;color:var(--gray-600);}
+  .lb-form-card{background:var(--white);border:1px solid var(--gray-300);border-radius:20px;padding:36px;max-width:640px;margin:0 auto;box-shadow:0 24px 60px -30px rgba(10,42,77,.25);}
+  .lb-honeypot{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+  .lb-success{display:none;text-align:center;padding:20px;}
+  .lb-success h4{color:#3AA65B;font-size:20px;margin-bottom:10px;}
+  .lb-success p{color:var(--gray-600);margin-bottom:20px;}
+  @media(max-width:800px){.lb-why{grid-template-columns:1fr;}.lb-toc{grid-template-columns:1fr;}.lb-author{grid-template-columns:1fr;text-align:center;}.lb-author img{margin:0 auto;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo-light-web.png" alt="Debass Technologies" class="navlogo-img"></a>
+    <nav class="navlinks">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Communication <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-menu--wide">
+          <div class="nav-dropdown-menu-header">Communication & Expérience Client</div>
+          <a href="../solutions/communication-ip-entreprise.html">Communication IP & Systèmes Audio</a>
+          <a href="../solutions/telephonie-communications-unifiees.html">Communications Unifiées</a>
+          <a href="../solutions/experience-client-contact-center.html">Centre de Contact Omnicanal</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Gestion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-menu--wide">
+          <div class="nav-dropdown-menu-header">Gestion & Transformation Digitale</div>
+          <a href="../solutions/gestion-relation-client-crm.html">Gestion de la Relation Client — CRM</a>
+          <a href="../solutions/liana-erp.html">Gestion Intégrée de l'Entreprise — ERP</a>
+        </div>
+      </div>
+      <a href="../index.html#process">Méthode</a>
+      <a href="../index.html#pourquoi">Pourquoi nous</a>
+      <a href="../entreprise/carrieres.html">Carrières</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Actualités <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-dropdown-menu">
+          <a href="../actualites/articles.html">Nos articles</a>
+          <a href="../actualites/evenements.html">Événements</a>
+        </div>
+      </div>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="navcta">
+      <a href="../index.html#formulaire" class="btn btn-primary small">Parler à un expert</a>
+    </div>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="subhero subhero-photo" style="background-image:url('../assets/livre-blanc/livre-blanc-hero.jpg');">
+  <div class="subhero-photo-overlay"></div>
+  <div class="wrap" style="position:relative;z-index:1;">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a> <span>/</span>
+      <span style="color:#fff;">Livre Blanc</span>
+    </div>
+    <div class="subhero-photo-text">
+    <div class="subhero-eyebrow eyebrow" style="color:var(--orange);">Livre blanc — Édition 2026</div>
+    <h1>Souveraineté Numérique Africaine</h1>
+    <p class="lead">Reprendre le contrôle de nos données, de nos infrastructures et de notre intelligence. Un cadre africain pragmatique en 15 chapitres, par Jules Tiemoko (Debass Technologies) avec la contribution technologique de HODI.</p>
+    <div class="hero-ctas" style="margin-top:32px;">
+      <a href="#formulaire" class="btn btn-primary">Télécharger gratuitement →</a>
+    </div>
+    <p style="margin-top:14px;font-size:12.5px;color:#9FB2CC;">22 pages · Gratuit · Envoyé par email et téléchargeable immédiatement</p>
+    </div>
+  </div>
+</section>
+<section style="padding-top:64px;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:32px;text-align:center;max-width:680px;margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;display:flex;">Pourquoi le lire</div>
+      <h2>Un cadre africain pragmatique pour reprendre le contrôle</h2>
+      <p>La souveraineté numérique n'est pas un lieu. C'est une chaîne de contrôle vérifiable — infrastructure, exploitation, juridiction, accès, portabilité et gouvernance.</p>
+    </div>
+    <div class="lb-why">
+      <div class="lb-why-card reveal">
+        <h4>🌍 Comprendre les enjeux</h4>
+        <p>Les six dimensions à mesurer pour évaluer réellement la souveraineté de vos données et infrastructures — au-delà du simple « serveur local ».</p>
+      </div>
+      <div class="lb-why-card reveal">
+        <h4>🏛️ Cinq piliers concrets</h4>
+        <p>Le cadre des cinq piliers de la souveraineté numérique africaine, et le rôle que l'intelligence artificielle joue déjà dans cette bataille.</p>
+      </div>
+      <div class="lb-why-card reveal">
+        <h4>🚀 Passer à l'action</h4>
+        <p>Un modèle concret HODI × Debass Technologies, et ce que les entreprises comme les gouvernements peuvent faire dès maintenant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:28px;">
+      <div class="eyebrow">Au sommaire</div>
+      <h2 style="font-size:24px;">15 chapitres pour bâtir, pas seulement consommer</h2>
+    </div>
+    <div class="lb-toc reveal">
+      <div class="lb-toc-item"><span class="lb-toc-num">01</span><span>Comprendre la souveraineté numérique</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">02</span><span>Le piège du « serveur local »</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">03</span><span>Pourquoi l'Afrique doit penser différemment</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">04</span><span>De la souveraineté nationale à la souveraineté panafricaine</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">05</span><span>Les cinq piliers de la souveraineté numérique africaine</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">06</span><span>L'intelligence artificielle : le prochain champ de bataille</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">07</span><span>Le rôle des entreprises africaines</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">08</span><span>Un modèle concret : HODI × Debass Technologies</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">09</span><span>Une nouvelle génération de cloud africain</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">10</span><span>Vers une certification africaine</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">11</span><span>La souveraineté doit rester ouverte</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">12</span><span>Transformer la dépense numérique en richesse africaine</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">13</span><span>La Côte d'Ivoire comme laboratoire</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">14</span><span>Ce que les gouvernements peuvent faire</span></div>
+      <div class="lb-toc-item"><span class="lb-toc-num">15</span><span>Ce que les entreprises doivent faire dès maintenant</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="lb-author reveal">
+      <img src="../assets/livre-blanc/jules-tiemoko-portrait.jpg" alt="Jules Tiemoko, CTO et co-fondateur de Debass Technologies">
+      <div>
+        <blockquote>« La question centrale n'est pas « Afrique ou reste du monde ? ». La question est : « Avons-nous le choix ? » »</blockquote>
+        <cite>Jules Tiemoko — CTO & Co-fondateur, Debass Technologies<br>Avec la contribution technologique de HODI — Host in Africa</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formulaire" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:28px;text-align:center;max-width:600px;margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;display:flex;">Téléchargement gratuit</div>
+      <h2>Recevez votre exemplaire du Livre Blanc</h2>
+      <p>Quelques informations, et le PDF est à vous immédiatement.</p>
+    </div>
+
+    <div class="lb-form-card reveal">
+      <form id="lb-download-form">
+        <input type="text" name="website" id="lb-honeypot" class="lb-honeypot" autocomplete="off" tabindex="-1" aria-hidden="true">
+        <div class="form-row">
+          <div class="form-field"><label for="lb-prenom">Prénom</label><input type="text" id="lb-prenom" placeholder="Jean" required></div>
+          <div class="form-field"><label for="lb-nom">Nom</label><input type="text" id="lb-nom" placeholder="Dupont" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><label for="lb-entreprise">Entreprise</label><input type="text" id="lb-entreprise" placeholder="Nom de votre entreprise" required></div>
+          <div class="form-field"><label for="lb-fonction">Fonction</label><input type="text" id="lb-fonction" placeholder="Ex. Directeur IT" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full"><label for="lb-email">E-mail professionnel</label><input type="email" id="lb-email" placeholder="jean.dupont@entreprise.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full"><label for="lb-tel">Téléphone / WhatsApp</label><input type="tel" id="lb-tel" placeholder="+225 XX XX XX XX XX" required></div>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" id="lb-submit-btn" style="width:100%;padding:14px;font-size:15px;margin-top:8px;">Télécharger le Livre Blanc</button>
+        <p style="margin-top:12px;font-size:11.5px;color:var(--gray-600);text-align:center;">Vos informations sont utilisées uniquement pour vous recontacter et ne sont pas partagées. Voir notre <a href="../entreprise/politique-confidentialite.html" style="color:var(--blue);">politique de confidentialité</a>.</p>
+      </form>
+      <div class="lb-success" id="lb-success">
+        <h4>✓ Merci, {PRENOM} !</h4>
+        <p>Votre téléchargement démarre automatiquement. Si rien ne se passe, cliquez sur le bouton ci-dessous.</p>
+        <a href="../assets/livre-blanc/livre-blanc-souverainete-numerique-africaine.pdf" download class="btn btn-primary" id="lb-download-link">Télécharger le PDF →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/logo-dark-web.png" alt="Debass Technologies" class="footer-logo-img">
+        <p style="font-size:13.5px;color:#8a94a3;max-width:280px;">Votre partenaire unique de confiance vers les meilleures solutions technologiques mondiales.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/debasstechnologie/" target="_blank" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/debasstechnologies/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="https://wa.me/2250564059060" target="_blank" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.44.79 3.06 1.2 4.71 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.16 3.03 14.68 2 12.04 2Zm0 18.13h-.01c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.12.82.83-3.04-.19-.31a8.16 8.16 0 0 1-1.26-4.37c0-4.51 3.68-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.41a8.15 8.15 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.18 8.2Zm4.48-6.14c-.25-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.16 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/results?search_query=debass+technologies" target="_blank" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.51 3.5 12 3.5 12 3.5s-7.51 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.87.55 9.38.55 9.38.55s7.51 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.6V8.4l6.24 3.6-6.24 3.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Nos solutions</h4>
+        <a href="../solutions/telephonie-communications-unifiees.html" target="_blank" rel="noopener">Communication unifiée & Centre de contact client</a>
+        <a href="../solutions/communication-ip-entreprise.html" target="_blank" rel="noopener">Communication IP d'entreprise</a>
+        <a href="https://www.ruijienetworks.com/" target="_blank" rel="noopener">Infrastructure réseau — Ruijie Networks ↗</a>
+        <a href="https://www.grandstream.com/" target="_blank" rel="noopener">Infrastructure réseau — Grandstream ↗</a>
+        <a href="https://www.al-enterprise.com/" target="_blank" rel="noopener">Infrastructure réseau — Alcatel-Lucent Enterprise ↗</a>
+        <a href="https://trueconf.com/" target="_blank" rel="noopener">Visioconférence — TrueConf ↗</a>
+        <a href="https://hodi.host/ci/?affid=24" target="_blank" rel="noopener">Debass Cloud — Hodi ↗</a>
+        <a href="https://www.adaptiv-networks.com/fr/" target="_blank" rel="noopener">Cybersécurité & SD-WAN — Adaptiv Networks ↗</a>
+        <a href="../solutions/gestion-relation-client-crm.html" target="_blank" rel="noopener">CRM Tout-en-un</a>
+        <a href="../solutions/liana-erp.html" target="_blank" rel="noopener">LIANA ERP</a>
+      </div>
+      <div>
+        <h4>Nos marques & Partenaires</h4>
+        <div class="footer-partners">
+          <a href="https://www.3cx.fr/" target="_blank">3CX</a>
+          <a href="https://hodusoft.com/contact-center-software/" target="_blank">HoduCC</a>
+          <a href="https://www.zycoo.com/fr" target="_blank">ZYCOO</a>
+          <a href="https://www.toacanada.com/" target="_blank">TOA</a>
+          <a href="https://www.al-enterprise.com/" target="_blank">Alcatel</a>
+          <a href="https://www.grandstream.com/" target="_blank">Grandstream</a>
+          <a href="https://www.mitel.com/" target="_blank">Mitel</a>
+          <a href="https://security.in.panasonic.com/" target="_blank">Panasonic</a>
+          <a href="https://trueconf.com/" target="_blank">TrueConf</a>
+          <a href="https://hodi.host/ci/" target="_blank">Hodi</a>
+          <a href="https://www.adaptiv-networks.com/" target="_blank">Adaptiv Networks</a>
+          <a href="https://www.vtiger.com/" target="_blank">Vtiger CRM</a>
+          <a href="https://frappe.io/" target="_blank">Frappe (ERPNext)</a>
+        </div>
+      </div>
+      <div>
+        <h4>Notre entreprise</h4>
+        <a href="../entreprise/a-propos.html">À propos</a>
+        <a href="../entreprise/carrieres.html">Carrières</a>
+        <a href="../entreprise/a-propos.html#equipe">Notre équipe</a>
+        <a href="../index.html#process">Notre méthode</a>
+        <a href="../actualites/articles.html">Nos articles</a>
+        <a href="../actualites/evenements.html">Événements</a>
+        <a href="../entreprise/politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="../entreprise/mentions-legales.html">Mentions légales</a>
+        <a href="../index.html#formulaire">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Debass Technologies. Tous droits réservés.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2250564059060" target="_blank" class="whatsapp-float" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp">
+  <span class="whatsapp-pulse"></span>
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.44.79 3.06 1.2 4.71 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.16 3.03 14.68 2 12.04 2Zm0 18.13h-.01c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.12.82.83-3.04-.19-.31a8.16 8.16 0 0 1-1.26-4.37c0-4.51 3.68-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.41a8.15 8.15 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.18 8.2Zm4.48-6.14c-.25-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.16 1.73 2.65 4.2 3.71.59.25 1.04.4 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28Z"/></svg>
+</a>
+
+<!--
+  ============================================================================
+  AGENT CONVERSATIONNEL DEBASS TECHNOLOGIES
+  ============================================================================
+  Fonctionnement honnête à connaître avant mise en production :
+  - Ceci n'est PAS un vrai modèle d'IA générative (pas de GPT/LLM connecté).
+    C'est un assistant à réponses pré-écrites qui reconnaît des mots-clés dans
+    les questions des visiteurs, à partir du contenu réel déjà présent sur ce
+    site. Pour une IA conversationnelle capable de répondre à absolument tout,
+    il faut connecter un vrai service tiers (Intercom Fin, Crisp AI, etc.).
+  - Ce qui EST pleinement fonctionnel dès maintenant :
+      1) Qualification obligatoire (nom, prénom, email, téléphone, société,
+         rôle) avant toute conversation — création d'un Lead Vtiger CRM.
+      2) Notification email à info@debasstechnologies.com à la qualification
+         ET après chaque message envoyé, avec la transcription complète de la
+         conversation — pour qu'un conseiller humain reprenne la main à tout
+         moment si les réponses automatiques ne suffisent pas.
+  ============================================================================
+-->
+<button class="ai-chat-btn" id="ai-chat-btn" aria-label="Discuter avec un conseiller Debass Technologies" onclick="toggleAiChat()">
+  <span class="ai-chat-dot"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
+
+<div class="ai-chat-panel" id="ai-chat-panel">
+  <div class="ai-chat-header">
+    <div class="ai-chat-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+    <div>
+      <h4>Miss Debass</h4>
+      <span>En ligne</span>
+    </div>
+    <button class="ai-chat-close" aria-label="Fermer" onclick="toggleAiChat()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="ai-chat-body" id="ai-chat-body"></div>
+
+  <div class="ai-chat-qualify" id="ai-chat-qualify" style="display:none;">
+    <p>Pour que je puisse transmettre votre échange à un conseiller si besoin, merci de renseigner rapidement vos coordonnées :</p>
+    <div class="form-row">
+      <input type="text" id="ai-q-prenom" placeholder="Prénom" required>
+      <input type="text" id="ai-q-nom" placeholder="Nom" required>
+    </div>
+    <input type="email" id="ai-q-email" placeholder="Email professionnel" required style="margin-bottom:8px;">
+    <div class="form-row">
+      <input type="tel" id="ai-q-tel" placeholder="Téléphone" required>
+      <input type="text" id="ai-q-societe" placeholder="Société">
+    </div>
+    <input type="text" id="ai-q-role" placeholder="Rôle / fonction occupée" style="margin-bottom:0;">
+    <button class="ai-chat-qualify-btn" id="ai-q-submit" onclick="submitAiQualify()">Continuer la conversation</button>
+  </div>
+
+  <div class="ai-chat-input-row active" id="ai-chat-input-row">
+    <input type="text" id="ai-chat-input" placeholder="Écrivez votre message..." onkeydown="if(event.key==='Enter')sendAiMessage();">
+    <button onclick="sendAiMessage()" aria-label="Envoyer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4Z"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Formulaire caché : création du Lead Vtiger dès la qualification (chatbot) -->
+<form id="ai-chat-vtiger-form" action="https://debasstechnologies.od2.vtiger.com/webforms/create.php" method="post" accept-charset="utf-8" target="ai-chat-vtiger-target" style="display:none;">
+  <input type="hidden" name="publicid" value="9de6fd1a762b6826d8f945625dbb55e2">
+  <input type="hidden" name="urlencodeenable" value="1">
+  <input type="hidden" name="leadsource" value="Agent conversationnel — Site web">
+  <input type="hidden" name="firstname" id="ai-v-firstname">
+  <input type="hidden" name="lastname" id="ai-v-lastname">
+  <input type="hidden" name="email" id="ai-v-email">
+  <input type="hidden" name="phone" id="ai-v-phone">
+  <input type="hidden" name="company" id="ai-v-company">
+  <input type="hidden" name="designation" id="ai-v-designation">
+  <input type="hidden" name="description" id="ai-v-description">
+</form>
+<iframe name="ai-chat-vtiger-target" style="display:none;" title="Envoi qualification agent conversationnel"></iframe>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12});
+  els.forEach(el=>io.observe(el));
+
+  let aiGreeted = false;
+  function toggleAiChat() {
+    const panel = document.getElementById('ai-chat-panel');
+    panel.classList.toggle('open');
+    if (panel.classList.contains('open') && !aiGreeted) {
+      aiGreeted = true;
+      aiAppendMsg('bot', 'Bonjour, je suis Miss Debass, comment puis-je vous aider aujourd\'hui ?');
+    }
+  }
+
+  const aiFaqDb = [
+    { k: ['carrière', 'emploi', 'poste', 'recrut', 'candidature', 'cv', 'stage'],
+      a: "Vous pouvez postuler directement via la page Carrières, en candidature spontanée ou pour un domaine précis (technique, développement, commercial, support)." },
+    { k: ['3cx', 'centre de contact', 'centre d\'appel', 'call center', 'standard téléphonique', 'téléphonie d\'entreprise', 'téléphonie ip'],
+      a: "3CX est notre solution de téléphonie et centre de contact : IP-PBX, Live Chat, WhatsApp et centre d'appels, sans coût par utilisateur. Voulez-vous que je vous mette en relation avec un conseiller ?" },
+    { k: ['zycoo', 'toa', 'communication ip', 'sonorisation', 'interphon', 'évacuation vocale'],
+      a: "ZYCOO (téléphonie et audio IP) et TOA (audio professionnel, sonorisation, évacuation vocale) sont nos partenaires pour la communication IP d'entreprise — parfait pour les environnements exigeants (campus, hôpitaux, sites industriels)." },
+    { k: ['réseau', 'wifi', 'wi-fi', 'switch', 'ruijie', 'grandstream', 'infrastructure réseau'],
+      a: "Notre infrastructure réseau s'appuie sur Ruijie (reconnu par Gartner) et Grandstream : switches, Wi-Fi 7 et gestion centralisée dans le cloud." },
+    { k: ['visioconférence', 'trueconf', 'réunion vidéo', 'visio'],
+      a: "TrueConf permet une visioconférence hébergée sur votre propre réseau, sans dépendre d'un cloud étranger — jusqu'à 2000 participants en UltraHD." },
+    { k: ['hébergement', 'cloud', 'debass cloud', 'hodi', 'serveur', 'site web'],
+      a: "Debass Cloud héberge vos données en Côte d'Ivoire (datacenter Tier III à Grand-Bassam), avec Hodi comme partenaire infrastructure — un site jusqu'à 4x plus rapide pour vos utilisateurs locaux." },
+    { k: ['sécurité', 'cybersécurité', 'sd-wan', 'sdwan', 'adaptiv', 'pare-feu', 'firewall'],
+      a: "Adaptiv Networks nous permet de proposer une connectivité SD-WAN sécurisée, avec pare-feu géré dans le cloud et protection des données par couches." },
+    { k: ['crm', 'vtiger', 'relation client', 'vente', 'ventes'],
+      a: "Vtiger CRM centralise vos ventes, marketing et support sur une seule plateforme — utilisé par plus de 400 000 entreprises dans le monde." },
+    { k: ['erpnext', 'erp', 'frappe', 'liana'],
+      a: "LIANA ERP est notre progiciel de gestion intégré — comptabilité, ventes, stocks, production et RH sur une seule plateforme. Il s'appuie sur ERPNext, développé par Frappe Technologies, une technologie open source mondialement reconnue." },
+    { k: ['prix', 'tarif', 'coût', 'combien', 'devis'],
+      a: "Les tarifs dépendent de la solution et de votre volume (utilisateurs, appels simultanés, espace disque...). Le plus simple est qu'un conseiller vous établisse un devis personnalisé — dites-moi votre besoin et je transmets votre demande." },
+    { k: ['délai', 'combien de temps', 'déploiement', 'installation'],
+      a: "Le délai dépend de la solution et de la taille de votre entreprise. Nos experts réalisent un diagnostic initial pour vous donner un calendrier précis." },
+    { k: ['contact', 'joindre', 'téléphone', 'appeler', 'whatsapp'],
+      a: "Vous pouvez aussi nous joindre directement via le bouton WhatsApp en bas à gauche de l'écran, ou via le formulaire de contact de chaque page." },
+    { k: ['bonjour', 'salut', 'hello', 'bonsoir'],
+      a: "Bonjour ! Comment puis-je vous aider concernant nos solutions (téléphonie, réseau, cloud, cybersécurité, CRM...) ?" },
+    { k: ['merci'],
+      a: "Avec plaisir ! N'hésitez pas si vous avez d'autres questions — un conseiller peut aussi reprendre cette conversation à tout moment." },
+  ];
+
+  function aiFindAnswer(text) {
+    const t = text.toLowerCase();
+    for (const entry of aiFaqDb) {
+      if (entry.k.some(function (kw) { return t.indexOf(kw) !== -1; })) return entry.a;
+    }
+    return "Je ne suis pas certain de pouvoir répondre précisément à cela — je transmets votre question à un conseiller Debass Technologies, qui vous recontactera rapidement par email ou téléphone.";
+  }
+
+  let aiTranscript = [];
+  let aiVisitor = {};
+  let aiQualified = false;
+  let aiUserMsgCount = 0;
+
+  function aiAppendMsg(role, text) {
+    const body = document.getElementById('ai-chat-body');
+    const div = document.createElement('div');
+    div.className = 'ai-msg ' + (role === 'user' ? 'ai-msg-user' : 'ai-msg-bot');
+    div.textContent = text;
+    body.appendChild(div);
+    body.scrollTop = body.scrollHeight;
+    aiTranscript.push((role === 'user' ? 'Visiteur' : 'Assistant') + ' : ' + text);
+  }
+
+  function submitAiQualify() {
+    const prenom = document.getElementById('ai-q-prenom').value.trim();
+    const nom = document.getElementById('ai-q-nom').value.trim();
+    const email = document.getElementById('ai-q-email').value.trim();
+    const tel = document.getElementById('ai-q-tel').value.trim();
+    const societe = document.getElementById('ai-q-societe').value.trim();
+    const role = document.getElementById('ai-q-role').value.trim();
+
+    if (!prenom || !nom || !email || !tel) {
+      alert('Merci de renseigner au minimum votre prénom, nom, email et téléphone.');
+      return;
+    }
+
+    aiVisitor = { prenom: prenom, nom: nom, email: email, tel: tel, societe: societe, role: role };
+
+    const btn = document.getElementById('ai-q-submit');
+    btn.disabled = true;
+    btn.textContent = 'Un instant...';
+
+    document.getElementById('ai-v-firstname').value = prenom;
+    document.getElementById('ai-v-lastname').value = nom;
+    document.getElementById('ai-v-email').value = email;
+    document.getElementById('ai-v-phone').value = tel;
+    document.getElementById('ai-v-company').value = societe;
+    document.getElementById('ai-v-designation').value = role;
+    document.getElementById('ai-v-description').value = 'Conversation démarrée via Miss Debass (agent conversationnel du site web).';
+    document.getElementById('ai-chat-vtiger-form').submit();
+
+    aiSendTranscriptEmail('Nouvelle conversation démarrée (qualification)');
+
+    setTimeout(function () {
+      document.getElementById('ai-chat-qualify').style.display = 'none';
+      document.getElementById('ai-chat-input-row').classList.add('active');
+      aiQualified = true;
+      aiAppendMsg('bot', 'Merci ' + prenom + ' ! Continuons — posez-moi vos autres questions, un conseiller peut aussi reprendre cette conversation à tout moment.');
+    }, 400);
+  }
+
+  function sendAiMessage() {
+    const input = document.getElementById('ai-chat-input');
+    const text = input.value.trim();
+    if (!text) return;
+    aiAppendMsg('user', text);
+    input.value = '';
+    aiUserMsgCount++;
+
+    setTimeout(function () {
+      const answer = aiFindAnswer(text);
+      aiAppendMsg('bot', answer);
+
+      if (!aiQualified) {
+        document.getElementById('ai-chat-input-row').classList.remove('active');
+        document.getElementById('ai-chat-qualify').style.display = 'block';
+      } else {
+        aiSendTranscriptEmail('Nouveau message dans une conversation en cours');
+      }
+    }, 500);
+  }
+
+  function aiSendTranscriptEmail(subjectPrefix) {
+    const payload = new FormData();
+    payload.append('_subject', subjectPrefix + ' — ' + aiVisitor.prenom + ' ' + aiVisitor.nom);
+    payload.append('_template', 'table');
+    payload.append('_captcha', 'false');
+    payload.append('Nom complet', aiVisitor.prenom + ' ' + aiVisitor.nom);
+    payload.append('Email', aiVisitor.email);
+    payload.append('Téléphone', aiVisitor.tel);
+    payload.append('Société', aiVisitor.societe || '—');
+    payload.append('Rôle', aiVisitor.role || '—');
+    payload.append('Transcription', aiTranscript.join('\n'));
+    fetch('https://formsubmit.co/ajax/info@debasstechnologies.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: payload
+    }).catch(function (err) {
+      console.warn('Notification agent conversationnel non envoyée :', err);
+    });
+  }
+
+
+  // ==========================================================================
+  // AGENT CONVERSATIONNEL — qualification + FAQ + notification/CRM
+  // ==========================================================================
+</script>
+
+
+<script src="../assets/js/mobile-nav.js" defer></script>
+<script src="../assets/js/vtiger-lead.js"></script>
+<script>
+  (function () {
+    var form = document.getElementById('lb-download-form');
+    var btn = document.getElementById('lb-submit-btn');
+    var success = document.getElementById('lb-success');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Préparation du téléchargement...';
+
+      var prenom = document.getElementById('lb-prenom').value;
+      var nom = document.getElementById('lb-nom').value;
+
+      window.submitVtigerLead({
+        nom: prenom + ' ' + nom,
+        email: document.getElementById('lb-email').value,
+        telephone: document.getElementById('lb-tel').value,
+        entreprise: document.getElementById('lb-entreprise').value,
+        website: document.getElementById('lb-honeypot').value,
+        leadsource: 'Livre Blanc — Souveraineté numérique africaine',
+        message: 'Fonction : ' + document.getElementById('lb-fonction').value,
+      }).then(function () {
+        form.style.display = 'none';
+        success.querySelector('h4').textContent = '✓ Merci, ' + prenom + ' !';
+        success.style.display = 'block';
+        // Déclenche le téléchargement automatique du PDF
+        var a = document.createElement('a');
+        a.href = '../assets/livre-blanc/livre-blanc-souverainete-numerique-africaine.pdf';
+        a.download = 'Livre-Blanc-Souverainete-Numerique-Africaine-Debass-HODI.pdf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }).catch(function (err) {
+        console.warn('Erreur envoi demande Livre Blanc :', err);
+        btn.disabled = false;
+        btn.textContent = 'Télécharger le Livre Blanc';
+        alert("Une erreur est survenue lors de l'envoi. Vous pouvez réessayer, ou nous écrire directement à info@debasstechnologies.com.");
+      });
+    });
+  })();
+</script>
+</body>
+</html>

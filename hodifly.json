@@ -1,0 +1,5 @@
+{
+  "mode": "static",
+  "env": { "required": ["VTIGER_PUBLIC_ID"] },
+  "keepReleases": 5
+}
