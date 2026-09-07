@@ -1,5 +1,5 @@
 {
   "mode": "static",
-  "env": { "required": ["VTIGER_PUBLIC_ID"] },
+  "env": { "required": ["VTIGER_PUBLIC_ID", "VTIGER_PUBLIC_ID_LIANA"] },
   "keepReleases": 5
 }

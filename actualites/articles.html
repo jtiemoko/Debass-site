@@ -313,16 +313,16 @@
 </div>
 
 <!-- Formulaire caché : création du Lead Vtiger dès la qualification (chatbot) -->
-<form id="ai-chat-vtiger-form" action="https://debasstechnologies.od2.vtiger.com/webforms/create.php" method="post" accept-charset="utf-8" target="ai-chat-vtiger-target" style="display:none;">
-  <input type="hidden" name="publicid" value="9de6fd1a762b6826d8f945625dbb55e2">
+<form id="ai-chat-vtiger-form" action="https://debasstechnologies.od2.vtiger.com/modules/Webforms/capture.php" method="post" accept-charset="utf-8" target="ai-chat-vtiger-target" style="display:none;">
+  <input type="hidden" name="publicid" value="6fc44bd2bdb0e97c51b61ef4b4879cb7">
   <input type="hidden" name="urlencodeenable" value="1">
   <input type="hidden" name="leadsource" value="Agent conversationnel — Site web">
   <input type="hidden" name="firstname" id="ai-v-firstname">
   <input type="hidden" name="lastname" id="ai-v-lastname">
   <input type="hidden" name="email" id="ai-v-email">
-  <input type="hidden" name="phone" id="ai-v-phone">
-  <input type="hidden" name="company" id="ai-v-company">
-  <input type="hidden" name="designation" id="ai-v-designation">
+  <input type="hidden" name="mobile" id="ai-v-phone">
+  <input type="hidden" name="cf_leads_companyname" id="ai-v-company">
+  <input type="hidden" name="cf_leads_roleorpositionheld" id="ai-v-designation">
   <input type="hidden" name="description" id="ai-v-description">
 </form>
 <iframe name="ai-chat-vtiger-target" style="display:none;" title="Envoi qualification agent conversationnel"></iframe>

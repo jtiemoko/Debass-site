@@ -1,8 +1,12 @@
 // api/submit-lead.js
 // Proxy serveur pour la création de leads Vtiger CRM.
-// Le publicid Vtiger ne quitte jamais le serveur (variable d'environnement VTIGER_PUBLIC_ID).
+// Les publicid Vtiger ne quittent jamais le serveur (variables d'environnement).
 // Protections : honeypot anti-bot, validation des champs, limitation de débit par IP.
 // Appelée depuis n'importe quel domaine Debass (site principal + domaine LIANA ERP) via CORS.
+//
+// Deux webforms Vtiger distincts, chacun avec son propre publicid :
+//   - "general" : Contact / Chatbot / Livre blanc  -> VTIGER_PUBLIC_ID
+//   - "liana"   : Devis LIANA ERP (champs dédiés)   -> VTIGER_PUBLIC_ID_LIANA
 
 const ALLOWED_ORIGINS = [
   'https://debasstechnologies.com',
@@ -10,6 +14,8 @@ const ALLOWED_ORIGINS = [
   'https://lianaerp.soft',        // domaine LIANA ERP — à ajuster au domaine final choisi
   'https://www.lianaerp.soft',
 ];
+
+const VTIGER_URL = 'https://debasstechnologies.od2.vtiger.com/modules/Webforms/capture.php';
 
 // Limitation de débit en mémoire (par processus). Se réinitialise à chaque déploiement —
 // suffisant contre un abus ponctuel, pas contre une attaque distribuée soutenue.
@@ -74,28 +80,50 @@ export async function POST(request) {
   recent.push(now);
   RATE_LIMIT.set(ip, recent);
 
-  // Construction du lead Vtiger — le publicid reste côté serveur
-  const publicId = process.env.VTIGER_PUBLIC_ID;
+  // Sélection du webform Vtiger : "liana" (devis LIANA ERP) ou "general" (tout le reste)
+  const formType = data.form === 'liana' ? 'liana' : 'general';
+  const publicId = formType === 'liana'
+    ? process.env.VTIGER_PUBLIC_ID_LIANA
+    : process.env.VTIGER_PUBLIC_ID;
+
   if (!publicId) {
-    console.error('VTIGER_PUBLIC_ID manquant dans les variables d\'environnement du projet.');
+    console.error(`Variable d'environnement manquante pour le formulaire "${formType}" (VTIGER_PUBLIC_ID${formType === 'liana' ? '_LIANA' : ''}).`);
     return json(500, { ok: false, why: 'server_misconfigured' }, origin);
   }
 
   const nameParts = nom.split(' ');
-  const vtigerBody = new URLSearchParams({
+  const fields = {
     publicid: publicId,
     urlencodeenable: '1',
     leadsource: data.leadsource || 'Site web',
     firstname: nameParts[0] || nom,
     lastname: nameParts.slice(1).join(' ') || '-',
     email,
-    phone: data.telephone || '',
-    company: data.entreprise || '',
+    mobile: data.telephone || '',
     description: data.message || '',
-  });
+  };
+
+  if (formType === 'liana') {
+    // Champs propres au webform "LIANA ERP Custom Quote"
+    fields.cf_leads_companyname = data.entreprise || '';
+    fields.cf_leads_administratorlicense = data.adminLicense || '';
+    fields.cf_leads_licensemanager = data.managerLicense || '';
+    fields.cf_leads_userlicense = data.userLicense || '';
+    fields.cf_leads_desiredformula = data.desiredFormula || '';
+    fields.cf_leads_preferredaccommodation = data.preferredAccommodation || '';
+  } else {
+    // Champs du webform général "Contact Our Experts"
+    fields.company = data.entreprise || '';
+  }
+
+  const vtigerBody = new URLSearchParams(fields);
+  // Champ multi-valeurs (modules souhaités) : ajouté séparément, une entrée par valeur
+  if (formType === 'liana' && Array.isArray(data.desiredModules)) {
+    data.desiredModules.forEach((m) => vtigerBody.append('cf_leads_desiredbasicmodules[]', m));
+  }
 
   try {
-    const vtigerRes = await fetch('https://debasstechnologies.od2.vtiger.com/webforms/create.php', {
+    const vtigerRes = await fetch(VTIGER_URL, {
       method: 'POST',
       body: vtigerBody,
     });
