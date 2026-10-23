@@ -179,7 +179,7 @@
   }
   @media(max-width:760px){.marquee-once span{font-size:19px;}}
 
-  .hero-banner-section{background:var(--blue-deep);line-height:0;}
+  .hero-banner-section{background:var(--blue-deep);line-height:0;padding:0;}
   .hero-banner-link{display:block;}
   .hero-banner-img{width:100%;height:auto;display:block;}
 
@@ -997,3 +997,9 @@
   .pricing-note strong{color:var(--blue-deep);}
   .pricing-note p{font-size:13.5px;color:var(--ink);margin:0;line-height:1.6;}
   @media(max-width:800px){.feature-grid{grid-template-columns:1fr;}.subhero{padding:130px 0 50px;}.subhero h1{font-size:28px;}}
+
+  /* Mobile : bannière héro lisible (recadrage au lieu de réduction) */
+  @media(max-width:700px){
+    .hero-banner-img{height:340px;object-fit:cover;object-position:0% center;}
+    .marquee-band{padding:18px 0;}
+  }
